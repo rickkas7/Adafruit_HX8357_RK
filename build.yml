@@ -3,7 +3,7 @@
   argon: [0.8.0-rc.25, 0.8.0-rc.26]
   boron: [0.8.0-rc.26]
   xenon: [0.8.0-rc.26]
-- build examples/touchpaint_featherwing
+- build: examples/touchpaint_featherwing
   argon: [0.8.0-rc.25, 0.8.0-rc.26]
   boron: [0.8.0-rc.26]
   xenon: [0.8.0-rc.26]
