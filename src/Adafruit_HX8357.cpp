@@ -96,6 +96,10 @@ Adafruit_HX8357::Adafruit_HX8357(int8_t cs, int8_t dc, int8_t mosi,
   displayType(type) {
 }
 
+Adafruit_HX8357::Adafruit_HX8357(int8_t _CS, int8_t _DC, int8_t _RST, uint8_t type) :
+  Adafruit_HX8357(_CS, _DC, _RST, type, &SPI) {
+}
+
 /*!
     @brief   Constructor for Adafruit_HX8357 cisplays, using hardware SPI.
     @param   cs

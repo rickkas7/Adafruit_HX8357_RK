@@ -72,8 +72,8 @@
 #define TFT_RST -1
 
 // Init screen on hardware SPI, HX8357D type:
-Adafruit_HX8357 tft = Adafruit_HX8357(TFT_CS, TFT_DC, TFT_RST);
-Adafruit_STMPE610 ts = Adafruit_STMPE610(STMPE_CS);
+Adafruit_HX8357 tft(TFT_CS, TFT_DC, TFT_RST);
+Adafruit_STMPE610 ts(STMPE_CS);
 
 // This is calibration data for the raw touch data to the screen coordinates
 #define TS_MINX 3800

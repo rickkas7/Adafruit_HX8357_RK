@@ -1,9 +1,7 @@
 - build: examples/graphicstest_featherwing
-  photon: [0.7.0]
-  argon: [0.8.0-rc.25, 0.8.0-rc.26]
-  boron: [0.8.0-rc.26]
-  xenon: [0.8.0-rc.26]
+  photon: [0.7.0, 1.0.0, latest]
+  argon: [latest]
+  boron: [latest,1.5.1-rc.1]
 - build: examples/touchpaint_featherwing
-  argon: [0.8.0-rc.25, 0.8.0-rc.26]
-  boron: [0.8.0-rc.26]
-  xenon: [0.8.0-rc.26]
+  argon: [latest]
+  boron: [latest,1.5.1-rc.1]

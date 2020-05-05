@@ -55,3 +55,10 @@ MIT license, all text above must be included in any redistribution
 Recent Arduino IDE releases include the Library Manager for easy installation. Otherwise, to download, click the DOWNLOAD ZIP button, uncompress and rename the uncompressed folder Adafruit_HX8357. Confirm that the Adafruit_HX8357 folder contains Adafruit_HX8357.cpp and Adafruit_HX8357.h. Place the Adafruit_HX8357 library folder your ArduinoSketchFolder/Libraries/ folder. You may need to create the Libraries subfolder if its your first library. Restart the IDE.
 
 Also requires the Adafruit_GFX library for Arduino.
+
+# Version History
+
+### 1.0.9 (2020-05-04)
+
+- Fix compiler error for undefined conversion to SpiClass with 1.5.1-rc.1.
+- Upgrade to Adafruit_GFX_RK 1.5.7

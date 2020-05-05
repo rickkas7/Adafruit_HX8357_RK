@@ -71,7 +71,7 @@
 #define TFT_RST -1
 
 // Use hardware SPI and the above for CS/DC
-Adafruit_HX8357 tft = Adafruit_HX8357(TFT_CS, TFT_DC, TFT_RST);
+Adafruit_HX8357 tft(TFT_CS, TFT_DC, TFT_RST);
 
 
 void setup() {
