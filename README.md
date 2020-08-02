@@ -58,6 +58,11 @@ Also requires the Adafruit_GFX library for Arduino.
 
 # Version History
 
+### 1.0.10 (2020-08-02)
+
+- Upgrade to Adafruit_GFX_RK 1.5.8
+
+
 ### 1.0.9 (2020-05-04)
 
 - Fix compiler error for undefined conversion to SpiClass with 1.5.1-rc.1.

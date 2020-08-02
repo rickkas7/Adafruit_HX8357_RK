@@ -1,5 +1,5 @@
 - build: examples/graphicstest_featherwing
-  photon: [0.7.0, 1.0.0, latest]
+  photon: [0.7.0, 1.0.0,]
   argon: [latest]
   boron: [latest,1.5.1-rc.1]
 - build: examples/touchpaint_featherwing

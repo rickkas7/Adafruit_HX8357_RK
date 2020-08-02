@@ -134,26 +134,6 @@ class Adafruit_HX8357 : public Adafruit_SPITFT {
 
     ~Adafruit_HX8357(void);
 
-#ifdef SYSTEM_VERSION_v151RC1
-  // In 1.5.0-rc.1, SPI interfaces are handled differently. You can still pass in SPI, SPI1, etc.
-	// but the code to handle it varies
-  Adafruit_HX8357(int8_t _CS, int8_t _DC, int8_t _RST, uint8_t type, ::particle::SpiProxy<HAL_SPI_INTERFACE1> *spiProxy = &SPI) :
-    Adafruit_HX8357(_CS, _DC, _RST, type, &spiProxy->instance()) {};
-
-#if Wiring_SPI1
-  Adafruit_HX8357(int8_t _CS, int8_t _DC, int8_t _RST, uint8_t type, ::particle::SpiProxy<HAL_SPI_INTERFACE2> *spiProxy) :
-    Adafruit_HX8357(_CS, _DC, _RST, type, &spiProxy->instance()) {};
-#endif
-
-#if Wiring_SPI2
-  Adafruit_HX8357(int8_t _CS, int8_t _DC, int8_t _RST, uint8_t type, ::particle::SpiProxy<HAL_SPI_INTERFACE3> *spiProxy) :
-    Adafruit_HX8357(_CS, _DC, _RST, type, &spiProxy->instance()) {};
-#endif
-
-#else
-
-#endif /* SYSTEM_VERSION_v151RC1 */
-
     void    begin(uint32_t freq = 0),
             setRotation(uint8_t r),
             invertDisplay(boolean i),
